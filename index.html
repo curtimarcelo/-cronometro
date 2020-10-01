@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Cronometro Javascriptor</title>
+        
+        
+        <style>
+            .container {
+                text-align: center;
+            }
+
+            button {
+                background: #069;
+                color: white;
+                font-size: 32px;
+                padding: 8px 20px;
+                cursor : pointer;
+                border: 0;
+
+            }
+            background{
+                color: blue;
+            }
+            
+        </style>
+    </head>
+
+<body>
+    <audio id="sound" src="alarme.mp3" style="display: none;"></audio>
+
+    <div class="container">
+        <h2>minutos:</h2>
+        <select id="minutos" name="minutos"></select>
+
+        <h2>segundos:</h2>
+        <select id="segundos" name="segundos"></select>
+        <br/>
+        <br/>
+        <button id="comecar">Começar!</button>
+
+        <div id="display">
+            <h3></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
